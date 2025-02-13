@@ -1,8 +1,8 @@
-name: Manual Workflow Approval
+name: Approve Workflow [Manual]
 description: Pause a workflow and get user approval to continue
 branding:
   icon: pause
-  color: yellow
+  color: green
 inputs:
   approvers:
     description: Required approvers
@@ -33,4 +33,4 @@ inputs:
     default: ''
 runs:
   using: docker
-  image: docker://ghcr.io/trstringer/manual-approval:1.9.1
+  image: docker://ghcr.io/pavlospt/manual-approval:latest
